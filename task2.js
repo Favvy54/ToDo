@@ -41,7 +41,7 @@ button.addEventListener('click', () => {
 
   // Create delete button and icon
   const button = document.createElement('button');
-  button.id = 'deleteBtn';
+  button.id = 'deleteBtn'; 
   const deleteIcon = document.createElement('i');
 
 // Add classes and styles to the delete icon
@@ -70,6 +70,10 @@ button.addEventListener('click', () => {
 
   listArray.push(inputText);
   console.log(listArray);
+
+  checkbox.addEventListener("click", () => {
+    newList.classList.toggle("completed")
+  })
 
   updateTaskCount();
 
